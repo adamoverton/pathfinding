@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  margin: 20px;
 }
 
 .App-logo {
@@ -19,4 +19,12 @@
 
 .App-link {
   color: #09d3ac;
+}
+
+.Tile {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #282c34;
+  margin: 3px;
 }
