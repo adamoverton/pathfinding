@@ -1,4 +1,4 @@
-import React, { CSSProperties } from 'react';
+import React, { CSSProperties, Fragment } from 'react';
 import './App.css';
 
 export interface TileProps {
@@ -19,7 +19,7 @@ export const Tile: React.FC<TileProps> = (props) => {
 
     return (
         <div className="Tile" style={inlineStyle} onClick={ onTileClick } >
-
+            <Fragment>{props.children}</Fragment>
         </div>
     );
 }

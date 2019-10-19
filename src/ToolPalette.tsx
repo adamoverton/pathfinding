@@ -16,6 +16,7 @@ export const ToolPalette: React.FC<ToolPaletteProps> = (props) => {
                 <Tool tool={CellState.Start}    currentTool={props.currentTool} onToolChange={props.onToolChange}/>
                 <Tool tool={CellState.End}      currentTool={props.currentTool} onToolChange={props.onToolChange}/>
                 <Tool tool={CellState.Blocked}  currentTool={props.currentTool} onToolChange={props.onToolChange}/>
+                <Tool tool={CellState.Mud}      currentTool={props.currentTool} onToolChange={props.onToolChange}/>
             </div>
         </Fragment>
     );

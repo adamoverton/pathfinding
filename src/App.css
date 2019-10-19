@@ -26,5 +26,11 @@
   width: 30px;
   height: 30px;
   border: 1px solid #282c34;
-  margin: 3px;
+  margin: 1px;
+  font-size: 8px;
+}
+
+.Grid {
+  border-spacing: 0px;
+  padding: 0px;
 }
