@@ -73,14 +73,15 @@ const App: React.FC = () => {
   const [pathHelper, setPathHelper] = useState<PathHelper[][]>();
 
   const onGenerateMaze = () => {
-    // 
     const mazeColCount = (colCount - 1) / 2;
     const mazeRowCount = (rowCount - 1) / 2;
+    // Generate maze, see https://www.npmjs.com/package/generate-maze
     const maze = generator(mazeColCount, mazeRowCount) as MazeCell[][];
     const newGrid = InitGrid(colCount, rowCount);
     var col;
     var row;
 
+    // Convert to block maze, see https://weblog.jamisbuck.org/2015/10/31/mazes-blockwise-geometry.html
     // North wall always blocked
     for (col = 0; col < colCount; col++) {
       newGrid[col][0] = CellState.Blocked;
@@ -116,6 +117,10 @@ const App: React.FC = () => {
 
     setGrid(newGrid);
     setPathHelper(undefined);
+    setStartCol(defaultColStart);
+    setStartRow(defaultRowStart);
+    setEndCol(defaultColEnd);
+    setEndRow(defaultRowEnd);
   }
 
   const onFindPathClick = () => {
