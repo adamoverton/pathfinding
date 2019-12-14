@@ -194,7 +194,8 @@ const App: React.FC = () => {
                               return (
                                 <Fragment>
                                   <div>
-                                    {pathHelper[colNumber][rowNumber].costToHere !== Number.MAX_SAFE_INTEGER ? "" : ""}
+                                    {pathHelper[colNumber][rowNumber].parentCol + ", " + pathHelper[colNumber][rowNumber].parentRow}
+                                    {/* {pathHelper[colNumber][rowNumber].costToHere !== Number.MAX_SAFE_INTEGER ? "" : ""} */}
                                   </div>
                                 </Fragment>
                                 );
