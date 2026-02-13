@@ -10,7 +10,7 @@
     "generate-maze": "^0.2.0",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
-    "react-scripts": "3.2.0",
+    "react-scripts": "5.0.1",
     "typescript": "3.6.3",
     "typescript-collections": "^1.3.2"
   },
